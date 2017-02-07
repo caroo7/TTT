@@ -11,7 +11,7 @@ public class BoardBuilder {
         return new Board(new BoardDimension(Configuration.BOARD_SIZE), initializeFields());
     }
 
-    List<Field> initializeFields() {
+    private List<Field> initializeFields() {
         int twoDimSize = Configuration.BOARD_SIZE * Configuration.BOARD_SIZE;
         List<Field> fields = new ArrayList<>();
         for(int i=0; i<twoDimSize; ++i) {

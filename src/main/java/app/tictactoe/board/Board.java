@@ -22,9 +22,7 @@ public class Board {
         return false;
     }
 
-    @Override
-    public String toString() {
-        return fields.toString();
+    public List<Field> getFields() {
+        return fields;
     }
-
 }
