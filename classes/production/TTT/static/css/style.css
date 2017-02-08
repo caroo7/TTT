@@ -1,0 +1,21 @@
+body {
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+
+canvas{
+    border:3px solid black;
+    background-color: cornflowerblue;
+    color: black;
+  }
+
+h1{
+    font-size:30px;
+    color: green;
+
+}
+.ng-scope{
+    font-size:5px;
+    display: inline;
+}

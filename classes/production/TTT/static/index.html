@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ticTacToeApp">
+
+<head>
+<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+
+<link rel="shortcut icon" href=""/>
+
+<script src="./lib/angular.js"></script>
+<script src="./lib/angular-route.js"></script>
+
+<script src="./js/app.js"></script>
+
+<script src="./js/controllers/GameController.js"></script>
+
+<script src="./js/services/GameService.js"></script>
+<script src="./js/services/DrawSignsService.js"></script>
+<script src="./js/services/CreateBoardService.js"></script>
+
+</head>
+
+<body>
+    <div id="board">
+    <h1>Tic tac toe</h1>
+   <ng-view></ng-view>
+   </div>
+</body>
+
+</html>
