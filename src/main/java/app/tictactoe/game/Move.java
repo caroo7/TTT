@@ -8,7 +8,9 @@ public class Move implements Serializable {
 
     private String id;
 
-    Move(String sign, String id) {
+    public Move() {}
+
+    public Move(String sign, String id) {
         this.sign = sign;
         this.id = id;
     }
