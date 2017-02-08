@@ -6,7 +6,7 @@ import app.tictactoe.board.Sign;
 public class MoveToFieldConverter {
 
     public static Field convert(Move move) {
-        return new Field(move.getPosition(), getSign(move.getPlayerSign()));
+        return new Field(move.getId(), getSign(move.getSign()));
     }
 
     private static Sign getSign(String value) {

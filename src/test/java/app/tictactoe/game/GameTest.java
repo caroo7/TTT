@@ -70,9 +70,9 @@ public class GameTest {
         board.addToFields(new Field(7, Sign.O));
         board.addToFields(new Field(8, Sign.X));
 
-        GameStatus status = game.checkWinCondition(Sign.O);
+        GameState state = game.checkWinCondition(Sign.O);
 
-        assertEquals(status, GameStatus.DRAW);
+        assertTrue(state.isADraw);
     }
 
     // finish this tests

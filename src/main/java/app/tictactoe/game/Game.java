@@ -18,17 +18,17 @@ public class Game {
         board.addToFields(field);
     }
 
-    public GameStatus checkWinCondition(Sign player) {
+    public GameState checkWinCondition(Sign player) {
         if(checkDraw()) {
-            return GameStatus.DRAW;
+            return new GameState(true, true);
         }
 
         boolean result = sequenceChecker.checkHorizontal(player) || sequenceChecker.checkVertical(player) || sequenceChecker.checkDimensional(player);
         if(result) {
-            return player.equals(Sign.O) ? GameStatus.O : GameStatus.X;
+            return new GameState(true, false);
         }
 
-        return GameStatus.PLAY;
+        return new GameState(false, false);
     }
 
     boolean checkDraw() {

@@ -1,10 +1,7 @@
 package app.tictactoe.controller;
 
-import app.tictactoe.game.Game;
+import app.tictactoe.game.*;
 import app.tictactoe.board.Field;
-import app.tictactoe.game.GameStatus;
-import app.tictactoe.game.Move;
-import app.tictactoe.game.MoveToFieldConverter;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -18,7 +15,7 @@ public class TicTacToeController {
     }
 
     @PostMapping("/game")
-    public GameStatus game(@RequestBody Move move) {
+    public GameState game(@RequestBody Move move) {
         if(move == null) {
             throw new IllegalArgumentException("Invalid move.");
         }

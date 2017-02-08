@@ -4,28 +4,28 @@ import java.io.Serializable;
 
 public class Move implements Serializable {
 
-    private String playerSign;
+    private String sign;
 
-    private int position;
+    private String id;
 
-    Move(String playerSign, int position) {
-        this.playerSign = playerSign;
-        this.position = position;
+    Move(String sign, String id) {
+        this.sign = sign;
+        this.id = id;
     }
 
-    String getPlayerSign() {
-        return playerSign;
+    public String getSign() {
+        return sign;
     }
 
-    public void setPlayerSign(String playerSign) {
-        this.playerSign = playerSign;
+    public void setSign(String sign) {
+        this.sign = sign;
     }
 
-    int getPosition() {
-        return position;
+    public int getId() {
+        return Integer.parseInt(id);
     }
 
-    public void setPosition(int position) {
-        this.position = position;
+    public void setId(String id) {
+        this.id = id;
     }
 }
