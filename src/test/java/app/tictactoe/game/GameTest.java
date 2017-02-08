@@ -3,11 +3,9 @@ package app.tictactoe.game;
 import app.tictactoe.board.Board;
 import app.tictactoe.board.Field;
 import app.tictactoe.board.Sign;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
@@ -73,6 +71,34 @@ public class GameTest {
         GameState state = game.checkWinCondition(Sign.O);
 
         assertTrue(state.isADraw);
+    }
+
+    @Test
+    public void onePlayerShouldWinTest() {
+        Board board = game.board;
+        board.addToFields(new Field(0, Sign.O));
+        board.addToFields(new Field(1, Sign.O));
+        board.addToFields(new Field(2, Sign.O));
+
+        GameState state = game.checkWinCondition(Sign.O);
+
+        assertTrue(state.endOfGame);
+    }
+
+    @Test
+    public void gameIsStillInProgressTest() {
+        Board board = game.board;
+        board.addToFields(new Field(0, Sign.O));
+        board.addToFields(new Field(1, Sign.X));
+        board.addToFields(new Field(2, Sign.O));
+        board.addToFields(new Field(3, Sign.X));
+        board.addToFields(new Field(4, Sign.X));
+        board.addToFields(new Field(5, Sign.O));
+
+        GameState state = game.checkWinCondition(Sign.O);
+
+        assertFalse(state.endOfGame);
+        assertFalse(state.isADraw);
     }
 
     // finish this tests

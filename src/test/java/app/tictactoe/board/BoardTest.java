@@ -26,8 +26,8 @@ public class BoardTest {
     public void addFieldToBoardTwoTimesTest() {
         Field fieldO = new Field(0, Sign.O);
         Field fieldX = new Field(0, Sign.X);
-        boolean result = board.addToFields(fieldO);
-        result = board.addToFields(fieldX);
+        board.addToFields(fieldO);
+        boolean result = board.addToFields(fieldX);
         assertFalse("Field can be added only once on specified position", result);
     }
 
