@@ -1,7 +1,10 @@
 package app.tictactoe.controller;
 
-import app.tictactoe.game.*;
 import app.tictactoe.board.Field;
+import app.tictactoe.game.Game;
+import app.tictactoe.game.GameState;
+import app.tictactoe.game.Move;
+import app.tictactoe.game.MoveToFieldConverter;
 import org.springframework.web.bind.annotation.*;
 
 

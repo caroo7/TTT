@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <div class="board"  ng-repeat="field in board" ng-init="refresh()">
     <canvas id="{{field.id}}" width="50" height="50" ng-click="drawSign(field.id)"></canvas>
     <br ng-if="($index%3)==2" />
 </div>
 
 <button class="playAgain" ng-if="endOfGame()" ng-click="restartGame()">Play again</button>
+=======
+<div class="board" ng-repeat="field in board">
+    <canvas id="{{field.id}}" width="50" height="50" ng-click="drawSign(field.id)"></canvas>
+    <br ng-if="($index%3)==2" />
+</div>
+>>>>>>> 5e48ad8a18abbc98602aa27957ff4d060633fcc9

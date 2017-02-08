@@ -5,7 +5,6 @@ import app.tictactoe.board.*;
 public class Game {
 
     Board board;
-
     private Sequence3x3Checker sequenceChecker;
 
     public Game() {

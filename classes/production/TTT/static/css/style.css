@@ -2,6 +2,7 @@ body {
     margin:0px;
     padding:0px;
     text-align: center;
+<<<<<<< HEAD
     }
 
 .playAgain{
@@ -10,6 +11,8 @@ body {
      background-color:red;
      color:white;
      border-radius:3px;
+=======
+>>>>>>> 5e48ad8a18abbc98602aa27957ff4d060633fcc9
 }
 
 canvas{
