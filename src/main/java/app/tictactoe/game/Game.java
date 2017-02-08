@@ -4,7 +4,7 @@ import app.tictactoe.board.*;
 
 public class Game {
 
-    private Board board;
+    Board board;
 
     private Sequence3x3Checker sequenceChecker;
 
@@ -31,7 +31,7 @@ public class Game {
         return GameStatus.PLAY;
     }
 
-    private boolean checkDraw() {
+    boolean checkDraw() {
         int counter = 0;
         for(Field field: board.getFields()) {
             if(field.getSign().equals(Sign.EMPTY)) {

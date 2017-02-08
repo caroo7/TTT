@@ -12,8 +12,10 @@ public class MoveToFieldConverter {
     private static Sign getSign(String value) {
         if (value.equalsIgnoreCase(Sign.O.toString())) {
             return Sign.O;
-        } else {
+        } else if (value.equalsIgnoreCase(Sign.X.toString())) {
             return Sign.X;
+        } else {
+            throw new IllegalArgumentException();
         }
     }
 

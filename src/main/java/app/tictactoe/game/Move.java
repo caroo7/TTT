@@ -8,7 +8,12 @@ public class Move implements Serializable {
 
     private int position;
 
-    public String getPlayerSign() {
+    Move(String playerSign, int position) {
+        this.playerSign = playerSign;
+        this.position = position;
+    }
+
+    String getPlayerSign() {
         return playerSign;
     }
 
@@ -16,7 +21,7 @@ public class Move implements Serializable {
         this.playerSign = playerSign;
     }
 
-    public int getPosition() {
+    int getPosition() {
         return position;
     }
 
