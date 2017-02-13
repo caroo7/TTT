@@ -1,0 +1,4 @@
+HOW TO RUN:
+- open gradle project using intellij and refresh project using 'refresh all gradle projects' button to download all dependencies
+- run main method from app.Application class to start app
+- go to localhost:8080 in any browser and play

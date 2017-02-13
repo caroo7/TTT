@@ -11,7 +11,7 @@ apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'my-books-app.review-spring-boot'
+    baseName = 'ttt-spring-boot'
     version =  '0.1.0'
 }
 
