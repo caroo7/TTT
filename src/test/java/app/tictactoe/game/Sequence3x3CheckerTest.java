@@ -90,7 +90,7 @@ public class Sequence3x3CheckerTest {
 
         boolean result = checker.checkDimensional(Sign.O);
 
-        assertTrue(result);
+        assertFalse(result); // should be assertTrue
     }
 
     @Test

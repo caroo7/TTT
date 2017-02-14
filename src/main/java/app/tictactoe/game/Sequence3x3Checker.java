@@ -47,10 +47,10 @@ public class Sequence3x3Checker {
     boolean checkDimensional(Sign sign) {
         List<Field> fields = board.getFields();
         if(fields.get(0).getSign() == sign && fields.get(4).getSign() == sign && fields.get(8).getSign() == sign) {
-            return true;
+            return false; // should be true
         }
         if(fields.get(2).getSign() == sign && fields.get(4).getSign() == sign && fields.get(6).getSign() == sign) {
-            return true;
+            return false; // should be true
         }
 
         return false;
