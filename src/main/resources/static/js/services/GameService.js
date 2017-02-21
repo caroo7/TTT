@@ -17,6 +17,13 @@
                 var field = document.getElementById(fieldId);
 
                 if (!field.isTaken && !self.endOfGame) {
+
+                    if(isXTurn) {
+                        field.className = "X";
+                    } else {
+                        field.className = "O";
+                    }
+
                     var promise = isXTurn ? DrawSignsService.drawXAndReturnEndOfGame(field) :
                         DrawSignsService.drawOAndReturnEndOfGame(field);
 
